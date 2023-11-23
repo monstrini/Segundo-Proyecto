@@ -1,48 +1,77 @@
-/* Estilos CSS para el formulario */
+html {
+  height: 100%;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d4dce9;
+  color: #fffefe;
   margin: 0;
   padding: 0;
+  background-attachment: scroll;
+  background-image: url(../images/fondo.jpg);
+  background-size: 100%;
 }
+
 
 header, footer {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 20px;
+  background-color: #cc3045;
+  color: #ffffff;
+  padding: 1px;
+  text-align: center;
+  
 }
 
-footer{
-  position: static;
-  bottom: 0;
-  width: 100%;
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-footer p {
+footer {
+  margin-top: auto;
+  font-size: 10px;
   text-align: center;
 }
 
-h1,
-h2 {
+footer h3 {
+  text-align: center;
+  font-size: 10px;
+}
+h1 {
   margin-top: 20px;
   text-align: center;
+  border-color: #ffffff;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:xx-large;
+}
+
+h2 {
+  text-align: center;
+  color: #fffafa;
+  font-size: 20px;
+  border-color: #030303;
+  border-style: Solid;
+  border-width: 3px;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #cc3045;
 }
 
 main {
-  width: 100%;
+  max-width: 500px;
   margin: auto;
 }
 
-li{
-  list-style: none;
+li {
   display: inline-block;
   padding: 20px;
-}
-
-.container-form{
-  max-width: 50%;
-  margin: auto;
+  list-style: none;
+  
 }
 
 label {
@@ -60,75 +89,92 @@ select {
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
 
 input[type="submit"],
 input[type="button"] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #cc3045;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor:pointer;
   padding: 12px 20px;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s ease;
+  font-weight: bold;
 }
 
 input[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #cc3045;
 }
 
-span {
-  color: red;
+.form-container {
+  color: #ffffff;
+  font-size: 20px;
+  border-color: #cc3045;
+  border-style: Solid;
+  border-width: 2px;
+  padding: 10px;
+  background-color: #e3fafa;
 }
 
-/* Estilos CSS para las tablas */
 table {
   border-collapse: collapse;
   width: 100%;
   font-size: 16px;
-  font-family: sans-serif;
-  margin-bottom: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 th,
 td {
   padding: 10px;
   text-align: center;
-  border: 5px solid #4CAF50;
-  background-color: #4CAF50;
-
-
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
 }
 
+
+
 td {
-  color: #fff;
+  color: #000000;
 }
 
 th {
-  background-color: #f2f2f2;
+  background-color: #cc3045;
   font-weight: bold;
+  color: #fffefe;
 }
 
 .tabla-container {
   max-width: 80%;
 }
-
 .listado-container {
   max-width: 70%;
 }
 .boton-container {
   margin-block: 30px;
 }
+
 a{
   text-decoration: none;
 }
 .listado-servicios a {
-  color: #3e8e41;
+  color: #f7fcfd;
   font-size: 20px;
+  /* border-color: #000000;
+  border-style: Solid;
+  border-width: 3px;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;*/
+  background-color: #ffffff
+}
+
+.listado-servicios {
+  margin: 10px
 }
 
 .listado-servicios li::marker {
